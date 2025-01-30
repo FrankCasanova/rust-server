@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Pure Rust Server - Welcome to my Homepage!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000080;  /* Classic "navy" blue */
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            color: #fff;
+            text-align: center;
+            background-image: url("/api/placeholder/50/50");
+            animation: stars 20s linear infinite;
+        }
+
+        .page-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: linear-gradient(to bottom, #800080, #000080);
+            border: 10px ridge #c0c0c0;
+            padding: 20px;
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+        }
+
+        .construction {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #ffff00;
+            text-shadow: 2px 2px #ff0000;
+        }
+
+        .guestbook {
+            background: #008080;
+            border: 5px outset #c0c0c0;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: "Courier New", monospace;
+        }
+
+        .counter {
+            background: #000;
+            color: #00ff00;
+            font-family: "Digital", monospace;
+            padding: 10px;
+            border: 3px inset #c0c0c0;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #00ff00;
+            text-shadow: 2px 2px #ff00ff;
+            margin: 20px 0;
+        }
+
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        .rainbow-text {
+            background: linear-gradient(to right, 
+                #ff0000, #ff7f00, #ffff00, #00ff00, 
+                #0000ff, #4b0082, #8f00ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .hit-counter {
+            font-family: "Courier New", monospace;
+            background: #000;
+            color: #00ff00;
+            padding: 5px 10px;
+            border: 2px inset #808080;
+        }
+
+        marquee {
+            background: #000;
+            color: #00ff00;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px outset #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <img src="https://i.pinimg.com/originals/32/88/2d/32882dbcd4424eb8e814ce8e62e68361.gif" alt="spinning-globe" />
+        <h1>Welcome to My Pure Rust Server Homepage!</h1>
+        
+        <div class="construction">
+            🚧 UNDER CONSTRUCTION 🚧
+        </div>
+
+        <marquee scrollamount="5" behavior="alternate">
+            ⭐ Best viewed with Netscape Navigator 4.0 at 800x600 resolution ⭐
+        </marquee>
+
+        <div class="guestbook">
+            <p class="blink">📖 Sign My Guestbook! 📖</p>
+            <p>Last signed by: WebMaster1998</p>
+        </div>
+
+        <div class="rainbow-text">
+            Powered by Pure Rust!
+        </div>
+
+        <marquee direction="up" scrollamount="2" behavior="scroll" height="100">
+            <p>🌟 Now with SSL!</p>
+            <p>🌟 Zero Dependencies!</p>
+            <p>🌟 Made with Love!</p>
+        </marquee>
+
+        <div class="hit-counter">
+            Visitors: 000001337
+        </div>
+
+        <div style="margin-top: 20px;">
+            <img src="https://i.redd.it/tsy10hp4ukq21.gif" alt="Made with Rust" width="50" />
+            <img src="https://media4.giphy.com/media/anjRJ4nv9WJzO/giphy.gif?cid=6c09b952t1p87g1pnskr3stkdz341b54fwg6maen8jtioamz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Best viewed with Netscape" width="50" />
+        </div>
+    </div>
+</body>
+</html>

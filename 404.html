@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>404 - Page Not Found!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000080;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            color: #fff;
+            text-align: center;
+            background-image: url("/api/placeholder/50/50");
+        }
+
+        .error-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: linear-gradient(to bottom, #800080, #000080);
+            border: 10px ridge #c0c0c0;
+            padding: 20px;
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-family: "Courier New", monospace;
+            color: #ff0000;
+            text-shadow: 5px 5px #000;
+            animation: shake 0.5s ease-in-out infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .error-message {
+            font-size: 24px;
+            color: #ffff00;
+            text-shadow: 2px 2px #ff0000;
+            margin: 20px 0;
+        }
+
+        .sad-face {
+            font-size: 100px;
+            margin: 20px 0;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .back-link {
+            background: #008080;
+            color: #ffff00;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 5px outset #c0c0c0;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px 0;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .back-link:hover {
+            border-style: inset;
+        }
+
+        .error-details {
+            font-family: "Courier New", monospace;
+            background: #000;
+            color: #00ff00;
+            padding: 20px;
+            margin: 20px auto;
+            border: 2px inset #808080;
+            width: 80%;
+            text-align: left;
+        }
+
+        marquee {
+            background: #000;
+            color: #00ff00;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px outset #c0c0c0;
+        }
+
+        .webmaster {
+            color: #ff00ff;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .counter {
+            background: #000;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+            padding: 5px 10px;
+            border: 2px inset #808080;
+            margin: 20px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        
+        <div class="sad-face">😢</div>
+        
+        <div class="error-message">
+            BUMMER DUDE! PAGE NOT FOUND!
+        </div>
+
+        <marquee scrollamount="5" behavior="alternate">
+            ⚠️ Error: File_not_found.html ⚠️
+        </marquee>
+
+        <div class="error-details">
+            > ERROR LOG:
+            <br>
+            > Requested page not found on server
+            <br>
+            > Please check the URL and try again
+            <br>
+            > Error Code: 404_PAGE_NOT_FOUND
+        </div>
+
+        <a href="/" class="back-link">← Back to Homepage</a>
+
+        <marquee direction="up" scrollamount="2" behavior="scroll" height="80">
+            <p>💾 Check your bookmarks!</p>
+            <p>📡 Maybe the page moved?</p>
+            <p>🔍 Try our search engine!</p>
+        </marquee>
+
+        <div class="counter">
+            Lost souls: 000000404
+        </div>
+
+        <div class="webmaster">
+            Contact the WebMaster@geocities.com if problem persists
+        </div>
+
+        <div style="margin-top: 20px;">
+            <img src="https://i.redd.it/tsy10hp4ukq21.gif" alt="Made with Rust" width="50" />
+            <img src="https://media4.giphy.com/media/anjRJ4nv9WJzO/giphy.gif?cid=6c09b952t1p87g1pnskr3stkdz341b54fwg6maen8jtioamz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Best viewed with Netscape" width="50" />
+        </div>
+    </div>
+</body>
+</html>
