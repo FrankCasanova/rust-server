@@ -54,10 +54,6 @@ This project serves as a foundation for more complex web applications. Potential
 
 Contributions are welcome! If you're interested in helping improve this project, please submit a pull request or open an issue to discuss your ideas.
 
-**License**
-----------
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 **Acknowledgments**
 ------------------
