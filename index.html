@@ -11,18 +11,33 @@
         }
         
         body {
-            background: #000080;  /* Classic "navy" blue */
             font-family: "Comic Sans MS", "Comic Sans", cursive;
             color: #fff;
             text-align: center;
-            background-image: url("/api/placeholder/50/50");
             animation: stars 20s linear infinite;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://trancentral.tv/wp-content/uploads/2016/06/tumblr_o65z5oFWoZ1tre1zbo1_500.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(10px);
+            z-index: -1;
         }
 
         .page-container {
             max-width: 800px;
             margin: 20px auto;
-            background: linear-gradient(to bottom, #800080, #000080);
+            background-image: url('https://i.seadn.io/s/raw/files/35545821fc44360b1facbcf703bd736d.gif?auto=format&dpr=1&w=1000');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             border: 10px ridge #c0c0c0;
             padding: 20px;
             box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
@@ -67,6 +82,7 @@
         @keyframes blinker {
             50% { opacity: 0; }
         }
+
 
         .rainbow-text {
             background: linear-gradient(to right, 

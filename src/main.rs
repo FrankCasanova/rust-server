@@ -19,7 +19,7 @@ fn main() {
     let pool = ThreadPool::new(4);
 
     // Get an iterator over incoming connections
-    for stream in listener.incoming().take(9) {
+    for stream in listener.incoming() {
         // `stream` is a `Result<TcpStream>` because it may not
         // be possible to create a `TcpStream` from the incoming
         // connection.
